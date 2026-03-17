@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI/ML Notes | Sovereign Stack</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Sovereign <span>Stack</span></h1>
+                <p class="subtitle">10-Year Infrastructure Build</p>
+            </div>
+            
+            <nav class="navigation">
+                
+<div class="nav-group">
+    <div class="nav-group-title">Overview</div>
+    <ul class="nav-list">
+        <li><a href="../../index.html">Home</a></li>
+    </ul>
+</div>
+<div class="nav-group"><div class="nav-group-title">The 9 Companies</div><ul class="nav-list"><li><a href="../../companies/arcvault/README.html">arcvault — Concept Phase</a></li><li><a href="../../companies/canonchain/README.html">canonchain — Concept Phase</a></li><li><a href="../../companies/clearpath/README.html">clearpath — Concept Phase</a></li><li><a href="../../companies/contextcore/README.html">contextcore — Concept Phase</a></li><li><a href="../../companies/epsilon-stack/README.html">epsilon-stack — Concept Phase</a></li><li><a href="../../companies/nullform/README.html">nullform — Concept Phase</a></li><li><a href="../../companies/sovereign-edit/README.html">sovereign-edit — Concept Phase</a></li><li><a href="../../companies/strata-finance/README.html">strata-finance — Concept Phase</a></li><li><a href="../../companies/veridact/README.html">veridact — Concept Phase</a></li></ul></div><div class="nav-group"><div class="nav-group-title">Phases</div><ul class="nav-list"><li><a href="../../docs/phases/phase-1.html">PHASE 1: FOUNDATION (2026–2028)</a></li><li><a href="../../docs/phases/phase-2.html">PHASE 2: TECHNICAL DEPTH (2028–2030)</a></li><li><a href="../../docs/phases/phase-3.html">PHASE 3: FIRST PRODUCTS (2030–2032)</a></li><li><a href="../../docs/phases/phase-4.html">PHASE 4: STACK INTEGRATION (2032–2034)</a></li><li><a href="../../docs/phases/phase-5.html">PHASE 5: SCALE & SOVEREIGNTY (2034–2036)</a></li></ul></div><div class="nav-group"><div class="nav-group-title">Learning</div><ul class="nav-list"><li><a href="../../learning/ai-ml/notes.html">Ai Ml</a></li><li><a href="../../learning/cryptography/notes.html">Cryptography</a></li><li><a href="../../learning/film/notes.html">Film</a></li><li><a href="../../learning/rust/notes.html">Rust</a></li><li><a href="../../learning/smart-contracts/notes.html">Smart Contracts</a></li><li><a href="../../learning/zk-proofs/notes.html">Zk Proofs</a></li></ul></div>
+            </nav>
+            
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub Portfolio
+                </a>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <div class="glass-panel">
+                <div class="markdown-body">
+                    <h1>AI/ML Notes</h1>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // Micro-animations for the portfolio
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.navigation a');
+            // get normalized current pathname or index.html
+            let currentPath = window.location.pathname.replace(/^\/+/, '');
+            if (!currentPath || currentPath === "" || currentPath.endsWith('/')) {
+                currentPath = window.location.pathname + 'index.html';
+            }
+            
+            links.forEach(link => {
+                const href = link.getAttribute('href').replace(/^\/+|\/+$/g, '');
+                // Basic matching for active state
+                if (currentPath.includes(href) && href !== '') {
+                    link.classList.add('active');
+                } else if ((currentPath.includes('index.html') || currentPath === '') && href.includes('index.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Add smooth subtle fade in
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.8s ease-out';
+                document.body.style.opacity = '1';
+            }, 50);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHASE 2: TECHNICAL DEPTH (2028–2030) | Sovereign Stack</title>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <aside class="sidebar">
+            <div class="brand">
+                <h1>Sovereign <span>Stack</span></h1>
+                <p class="subtitle">10-Year Infrastructure Build</p>
+            </div>
+            
+            <nav class="navigation">
+                
+<div class="nav-group">
+    <div class="nav-group-title">Overview</div>
+    <ul class="nav-list">
+        <li><a href="../../index.html">Home</a></li>
+    </ul>
+</div>
+<div class="nav-group"><div class="nav-group-title">The 9 Companies</div><ul class="nav-list"><li><a href="../../companies/arcvault/README.html">arcvault — Concept Phase</a></li><li><a href="../../companies/canonchain/README.html">canonchain — Concept Phase</a></li><li><a href="../../companies/clearpath/README.html">clearpath — Concept Phase</a></li><li><a href="../../companies/contextcore/README.html">contextcore — Concept Phase</a></li><li><a href="../../companies/epsilon-stack/README.html">epsilon-stack — Concept Phase</a></li><li><a href="../../companies/nullform/README.html">nullform — Concept Phase</a></li><li><a href="../../companies/sovereign-edit/README.html">sovereign-edit — Concept Phase</a></li><li><a href="../../companies/strata-finance/README.html">strata-finance — Concept Phase</a></li><li><a href="../../companies/veridact/README.html">veridact — Concept Phase</a></li></ul></div><div class="nav-group"><div class="nav-group-title">Phases</div><ul class="nav-list"><li><a href="../../docs/phases/phase-1.html">PHASE 1: FOUNDATION (2026–2028)</a></li><li><a href="../../docs/phases/phase-2.html">PHASE 2: TECHNICAL DEPTH (2028–2030)</a></li><li><a href="../../docs/phases/phase-3.html">PHASE 3: FIRST PRODUCTS (2030–2032)</a></li><li><a href="../../docs/phases/phase-4.html">PHASE 4: STACK INTEGRATION (2032–2034)</a></li><li><a href="../../docs/phases/phase-5.html">PHASE 5: SCALE & SOVEREIGNTY (2034–2036)</a></li></ul></div><div class="nav-group"><div class="nav-group-title">Learning</div><ul class="nav-list"><li><a href="../../learning/ai-ml/notes.html">Ai Ml</a></li><li><a href="../../learning/cryptography/notes.html">Cryptography</a></li><li><a href="../../learning/film/notes.html">Film</a></li><li><a href="../../learning/rust/notes.html">Rust</a></li><li><a href="../../learning/smart-contracts/notes.html">Smart Contracts</a></li><li><a href="../../learning/zk-proofs/notes.html">Zk Proofs</a></li></ul></div>
+            </nav>
+            
+            <div class="footer-links">
+                <a href="https://github.com" target="_blank" class="github-link">
+                    <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    GitHub Portfolio
+                </a>
+            </div>
+        </aside>
+
+        <main class="content-area">
+            <div class="glass-panel">
+                <div class="markdown-body">
+                    <h1>PHASE 2: TECHNICAL DEPTH (2028–2030)</h1>
+<h3>&quot;Build the primitives before you build the product.&quot;</h3>
+<h2>OBJECTIVE</h2>
+<p>Go from understanding to implementation. Build toy versions of every core protocol.</p>
+<h2>WHAT TO EXPECT</h2>
+<ul>
+<li>This is the hardest phase. ZK circuits are genuinely difficult.</li>
+<li>You will build things that don&#39;t work. That is the work.</li>
+<li>By end of phase: you have working prototypes of Veridact and Nullform at toy scale.</li>
+<li>Your films now demonstrate the protocols in action.</li>
+</ul>
+<h2>LEARNING TRACKS</h2>
+<h3>1. Zero-Knowledge Proofs (Implementation)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Understand the prover/verifier architecture</li>
+<li><input disabled="" type="checkbox"> Learn arithmetic circuits</li>
+<li><input disabled="" type="checkbox"> Write circuits in Circom</li>
+<li><input disabled="" type="checkbox"> Move to arkworks (Rust ZK library)</li>
+<li><input disabled="" type="checkbox"> Build: proof-of-location without revealing location</li>
+<li><input disabled="" type="checkbox"> Build: proof-of-human-capture without revealing identity</li>
+</ul>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><em>Proofs, Arguments, and Zero-Knowledge</em> — Justin Thaler (free PDF)</li>
+<li>ZKHack puzzles (zkiap.com) — hands-on ZK challenges</li>
+<li>arkworks-rs documentation (GitHub)</li>
+<li>Circom documentation (docs.circom.io)</li>
+<li>0xPARC learning resources (learn.0xparc.org)</li>
+</ul>
+<p><strong>Milestone:</strong> Working Circom circuit that proves a photo timestamp without revealing it.</p>
+<hr>
+<h3>2. Trusted Execution Environments (TEEs)</h3>
+<ul>
+<li><input disabled="" type="checkbox"> ARM TrustZone architecture</li>
+<li><input disabled="" type="checkbox"> Intel SGX programming model</li>
+<li><input disabled="" type="checkbox"> Understand attack surface (what TEEs protect vs. don&#39;t)</li>
+<li><input disabled="" type="checkbox"> Build a simple attestation demo</li>
+</ul>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>Intel SGX Developer Guide (free, Intel documentation)</li>
+<li><em>A Primer on Hardware Security</em> — academic papers via Google Scholar</li>
+<li>Teaclave (Apache) — open source TEE framework</li>
+<li>ARM TrustZone developer documentation</li>
+</ul>
+<p><strong>Milestone:</strong> A demo where data processed inside an enclave produces an unforgeable attestation report.</p>
+<hr>
+<h3>3. Smart Contracts &amp; Blockchain</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Solidity basics (read and audit level)</li>
+<li><input disabled="" type="checkbox"> StarkNet / Cairo (ZK-native — directly relevant to your stack)</li>
+<li><input disabled="" type="checkbox"> How a revenue waterfall works as code</li>
+<li><input disabled="" type="checkbox"> ERC standards relevant to IP and rights</li>
+</ul>
+<p><strong>Resources:</strong></p>
+<ul>
+<li>CryptoZombies (free, Solidity tutorial)</li>
+<li>StarkNet documentation (docs.starknet.io)</li>
+<li><em>Mastering Ethereum</em> — Antonopoulos (free on GitHub)</li>
+<li>OpenZeppelin contracts (reference implementations)</li>
+</ul>
+<p><strong>Milestone:</strong> Deploy a simple rights registry contract on StarkNet testnet.</p>
+<hr>
+<h3>4. AI/ML Engineering</h3>
+<ul>
+<li><input disabled="" type="checkbox"> How transformer models work at the architecture level</li>
+<li><input disabled="" type="checkbox"> Fine-tuning open-source models (Mistral, Llama)</li>
+<li><input disabled="" type="checkbox"> RAG (Retrieval Augmented Generation) — core of ContextCore</li>
+<li><input disabled="" type="checkbox"> Vector databases (Pinecone, Chroma, Weaviate)</li>
+<li><input disabled="" type="checkbox"> Data pipeline engineering</li>
+</ul>
+<p><strong>Resources:</strong></p>
+<ul>
+<li><em>Attention Is All You Need</em> — Vaswani et al. (original paper, free)</li>
+<li>Andrej Karpathy YouTube — build GPT from scratch (free)</li>
+<li>Fast.ai practical deep learning course (free)</li>
+<li>LangChain documentation (for RAG pipelines)</li>
+<li>Hugging Face tutorials (free)</li>
+</ul>
+<p><strong>Milestone:</strong> Fine-tune Mistral on 500 pages of film production accounting documents. Demonstrate it outperforms GPT-4 on domain-specific questions.</p>
+<hr>
+<h3>5. Filmmaking</h3>
+<ul>
+<li><input disabled="" type="checkbox"> Direct first feature-length or long short (30–60 min)</li>
+<li><input disabled="" type="checkbox"> Run it through every conceptual protocol (manual provenance chain)</li>
+<li><input disabled="" type="checkbox"> Attempt first international distribution (even micro-scale)</li>
+<li><input disabled="" type="checkbox"> Document every friction point — each one is a product specification</li>
+</ul>
+<p><strong>Milestone:</strong> Feature/long short completed and distributed. Friction log documented in repo.</p>
+<hr>
+<h2>DELIVERABLES BY END OF PHASE 2</h2>
+<ul>
+<li><input disabled="" type="checkbox"> Toy ZK proof for media attestation (Veridact prototype)</li>
+<li><input disabled="" type="checkbox"> TEE attestation demo</li>
+<li><input disabled="" type="checkbox"> Rights registry on testnet (Canonchain prototype)</li>
+<li><input disabled="" type="checkbox"> Fine-tuned domain model (ContextCore prototype)</li>
+<li><input disabled="" type="checkbox"> One feature/long short film completed</li>
+</ul>
+
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script>
+        // Micro-animations for the portfolio
+        document.addEventListener('DOMContentLoaded', () => {
+            const links = document.querySelectorAll('.navigation a');
+            // get normalized current pathname or index.html
+            let currentPath = window.location.pathname.replace(/^\/+/, '');
+            if (!currentPath || currentPath === "" || currentPath.endsWith('/')) {
+                currentPath = window.location.pathname + 'index.html';
+            }
+            
+            links.forEach(link => {
+                const href = link.getAttribute('href').replace(/^\/+|\/+$/g, '');
+                // Basic matching for active state
+                if (currentPath.includes(href) && href !== '') {
+                    link.classList.add('active');
+                } else if ((currentPath.includes('index.html') || currentPath === '') && href.includes('index.html')) {
+                    link.classList.add('active');
+                }
+            });
+
+            // Add smooth subtle fade in
+            document.body.style.opacity = '0';
+            setTimeout(() => {
+                document.body.style.transition = 'opacity 0.8s ease-out';
+                document.body.style.opacity = '1';
+            }, 50);
+        });
+    </script>
+</body>
+</html>
