@@ -67,6 +67,12 @@ mdFiles.forEach(file => {
     } else if (rel.startsWith('docs/phases/')) {
         navData.phases.push(item);
     } else if (rel.startsWith('learning/')) {
+        // Use directory name as title for 'notes.md' for better sidebar UX
+        if (rel.endsWith('notes.md') || rel.endsWith('README.md')) {
+            const dirName = path.basename(path.dirname(file));
+            // Capitalize and format directory name
+            item.title = dirName.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+        }
         navData.learning.push(item);
     } else {
         navData.root.push(item);
@@ -78,26 +84,26 @@ let sidebarHtml = `
 <div class="nav-group">
     <div class="nav-group-title">Overview</div>
     <ul class="nav-list">
-        <li><a href="/index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
     </ul>
 </div>
 `;
 
 if(navData.companies.length > 0) {
     sidebarHtml += `<div class="nav-group"><div class="nav-group-title">The 9 Companies</div><ul class="nav-list">`;
-    navData.companies.forEach(i => { sidebarHtml += `<li><a href="/${i.relOut}">${i.title.replace('The Sovereign Stack: ', '').replace('The ', '')}</a></li>` });
+    navData.companies.forEach(i => { sidebarHtml += `<li><a href="${i.relOut}">${i.title.replace('The Sovereign Stack: ', '').replace('The ', '')}</a></li>` });
     sidebarHtml += `</ul></div>`;
 }
 
 if(navData.phases.length > 0) {
     sidebarHtml += `<div class="nav-group"><div class="nav-group-title">Phases</div><ul class="nav-list">`;
-    navData.phases.forEach(i => { sidebarHtml += `<li><a href="/${i.relOut}">${i.title}</a></li>` });
+    navData.phases.forEach(i => { sidebarHtml += `<li><a href="${i.relOut}">${i.title}</a></li>` });
     sidebarHtml += `</ul></div>`;
 }
 
 if(navData.learning.length > 0) {
     sidebarHtml += `<div class="nav-group"><div class="nav-group-title">Learning</div><ul class="nav-list">`;
-    navData.learning.forEach(i => { sidebarHtml += `<li><a href="/${i.relOut}">${i.title}</a></li>` });
+    navData.learning.forEach(i => { sidebarHtml += `<li><a href="${i.relOut}">${i.title}</a></li>` });
     sidebarHtml += `</ul></div>`;
 }
 
