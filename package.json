@@ -1,0 +1,27 @@
+{
+  "name": "ott-sovereign-stack-1",
+  "version": "1.0.0",
+  "description": "> *\"You are not building products. You are building epistemic infrastructure for a world that can no longer trust its own eyes.\"*",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OTT55/ott-sovereign-stack.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/OTT55/ott-sovereign-stack/issues"
+  },
+  "homepage": "https://github.com/OTT55/ott-sovereign-stack#readme",
+  "dependencies": {
+    "marked": "^17.0.4"
+  }
+}
