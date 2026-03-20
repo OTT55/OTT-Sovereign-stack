@@ -5,3 +5,58 @@ for car in cars:
         print(car.upper())
     elif car == 'audi':
         print(car.title())
+    elif car != 'bmw':
+        print(len(car))
+
+age = int(input("How old are you? "))
+height = float(input("How tall are you in centimeters? "))
+weight = float(input("How much do you weigh in kilograms? "))
+
+ages = [12, 18, 25, 30, 40, 33, 67]
+weights = [50, 60, 70, 80, 90, 100, 110]
+heights = [150, 160, 170, 180, 190, 200, 210]
+#ages.append(age)
+
+
+if age < 18 and weight < 60 and height < 180:
+    print("You are a minor.")
+elif age < 18 and weight < 60 and height >180:
+    print("You are a minor, but you are tall and skinny for your age.")
+elif age < 18 and weight > 60 and height >180:
+    print("Alright, you are really big for your age.")
+elif age < 18 and weight > 60 and height < 180:
+    print("You are a minor, but you are overweight for your age.")
+elif age > 18 and weight < 60 and height >180:
+    print("You are an adult, but you are tall and skinny for your age.")    
+elif age > 18 and weight < 60 and height < 180:
+    print("You are an adult, but you are short and skinny for your age.")
+elif age > 18 and weight > 60 and height < 180:
+    print("You are an adult, but you are short and overweight for your age.")
+elif age > 18 and weight > 60 and height > 180:
+    print("Wow you are big for an adult. You body lifting or something?")
+
+ages = [12, 18, 25, 30, 40, 33, 67]
+weights = [50, 60, 70, 80, 90, 100, 110]
+heights = [150, 160, 170, 180, 190, 200, 210]
+
+for age, weight, height in zip(ages, weights, heights):
+    print(f"Age: {age}, Weight: {weight}, Height: {height}")
+    if age < 18 and weight < 60 and height < 160:
+        print("You are a minor.")
+    elif age < 18 and weight < 60 and height >180:
+        print("You are a minor, but you are tall and skinny for your age.")
+    elif age < 18 and weight > 60 and height >180:
+        print("Alright, you are really big for your age.")
+    elif age < 18 and weight > 60 and height < 180:
+        print("You are a minor, but you are overweight for your age.")
+    elif age >= 18 and weight < 60 and height >180:
+        print("You are an adult, but you are tall and skinny for your age.")
+    elif age >= 18 and weight < 60 and height < 160:
+        print("You are an adult, but you are short and skinny for your age.")
+    elif age >= 18 and weight > 60 and height < 160:
+        print("You are an adult, but you are short and overweight for your age.")
+    elif age >= 18 and weight > 60 and height > 180:
+        print("Wow you are big for an adult. You body lifting or something?")
+    else:
+        print("You do not fit into a specific category.")
+    print()  
