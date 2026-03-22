@@ -6,3 +6,4 @@ if 12 in ages:
     print("I am OTT")
 if 160 not in ages:
     print("You can live")
+
