@@ -1,38 +1,81 @@
-users = {
-    "kolvt" : {
-        "first" : 'kolakanwi',
-        "last" : 'van tegha',
-        "location" : 'doulai'  
+
+powers = []
+energy = {
+     "kol": {
+        "firstname": 'Kolakanwi',
+        "lastname": 'Van Tegha',
+        "ability": 'light manipulation',
+        "weakness": 'absence of light for long',
     },
-    "jon" : {
-        "first" : 'jonathan',
-        "last" : 'richards',
-        "location" : 'usa',
+    "ja": {
+        "firstname": 'Jolakanwi',
+        "lastname": 'Van Tegha',
+        "ability": 'aura manipulation',
+        "weakness": 'drains his energy frequently',
     },
-    "nalk" : {
-        "first" : 'naliana',
-        "last" : 'kul',
-        "location" : 'finland',
+    "kianni": {
+        "firstname": 'Kianni',
+        "lastname": 'Sol',
+        "ability": 'Vibrate and teleport',
+        "weakness": 'can use the two interchangably for long',
+    },
+    "jade" : {
+        "firstname": 'Jade',
+        "lastname": 'Sol Van Tegha',
+        "ability": 'physics manipulation',
+        "weakness": 'excess physical strain and trauma',
+    },
+    "kirby" : {
+        "firstname": 'Kirby',
+        "lastname": 'Okante',
+        "ability": 'Kinetic shell',
+        "weakness": 'shell activates only on impact',
+    },
+    "luente" : {
+        "firstname": 'Luente',
+        "lastname": 'Tening',
+        "ability": 'Thermal manipulation',
+        "weakness": 'cold environments for too long',
     },
 }
+biokinetics = {
+    "gaelle": {
+        "firstname": 'Gaelle',
+        "lastname": 'Antri',
+        "ability": 'Seraphim',
+        "weakness": 'cannot heal while flying',
+    },
+    "brandon": {
+        "firstname": 'Brandon',
+        "lastname": 'Okante',
+        "ability": 'metamorphosis',
+        "weakness": 'starts hurting after a while',
+    },
+    "sofia": {
+        "firstname": 'Sofia',
+        "lastname": 'Selman',
+        "ability": 'hunter',
+        "weakness": 'sensory overload in chaotic environments',
+    },
+    "jemimah": {
+        "firstname": 'Jemimah',
+        "lastname": 'Selman',
+        "ability": 'predator',
+        "weakness": 'susceptible to cat weaknesses',
+    },
+    "ulysis": {
+        "firstname": 'Ulysis',
+        "lastname": 'Ghazi',
+        "ability": 'blood puppetry',
+        "weakness": 'his he over uses blood, he becomes weak',
+    },
 
-for username, user in users.items():
-        print(f"\nUsername : {username}")
-        full_name = f"{user['first']} {user['last']}"
-        location = user['location']
-        print(f"\tFull name: {full_name.title()}")
-        print(f"\tLocation : {location.title()}")
 
-num = 1
-while(num<100000):
-        print(num, end=" ")
-
-        num += 1
-
-sum = 0 
-num = 1
-while(num<10):
-    sum += num
-    num += 1
-print(f"\nThe sum of 1-10 numbers is {sum}")
-
+}
+powers = [energy, biokinetics]
+for power in powers:
+     for person, traits in power.items():
+          print(f"Username : {person}")
+          print(f"\tName : {traits['firstname']} {traits['lastname']}")
+          print(f"\tAbilities : {traits['ability'].capitalize()}")
+          print(f"\tWeaknesses : {traits['weakness'].capitalize()}")
